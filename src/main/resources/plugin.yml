@@ -1,0 +1,5 @@
+name: MazePlugin
+version: '${project.version}'
+main: net.kigawa.mazeplugin.MazePlugin
+api-version: 1.16
+authors: [ kigawa ]
