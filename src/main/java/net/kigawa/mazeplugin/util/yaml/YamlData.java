@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.yaml;
 
-import net.kigawa.bordgameplugin.util.all.Named;
+import net.kigawa.mazeplugin.util.all.Named;
 
 public abstract class YamlData implements Named {
     String name;

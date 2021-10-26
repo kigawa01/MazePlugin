@@ -1,8 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.gate.command.gate;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.Subcommand;
-import net.kigawa.bordgameplugin.util.plugin.gate.GateManager;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.command.Subcommand;
+import net.kigawa.mazeplugin.util.plugin.gate.GateManager;
 
 public abstract class GateCommandBase extends Subcommand {
     private final GateManager manager;

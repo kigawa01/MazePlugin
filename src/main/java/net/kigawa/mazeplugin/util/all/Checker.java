@@ -1,7 +1,5 @@
 package net.kigawa.mazeplugin.util.all;
 
-import net.kigawa.bordgameplugin.util.all.HasContain;
-
 public class Checker {
 
     private String str;

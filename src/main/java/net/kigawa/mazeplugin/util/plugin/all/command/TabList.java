@@ -1,9 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.all.command;
 
-import net.kigawa.bordgameplugin.util.all.Named;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.EqualsCommand;
-import net.kigawa.bordgameplugin.util.plugin.all.message.logger.PluginLogger;
+import net.kigawa.mazeplugin.util.all.Named;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.message.logger.PluginLogger;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 

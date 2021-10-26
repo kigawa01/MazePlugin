@@ -1,15 +1,13 @@
 package net.kigawa.mazeplugin.util.plugin.all.command;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.Command;
-import net.kigawa.bordgameplugin.util.plugin.all.command.EqualsCommand;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
 import java.util.List;
 
-public abstract class FirstCommand extends net.kigawa.bordgameplugin.util.plugin.all.command.Command implements CommandExecutor, TabCompleter {
+public abstract class FirstCommand extends Command implements CommandExecutor, TabCompleter {
     PluginBase plugin;
 
     public FirstCommand(PluginBase plugin) {
@@ -26,7 +24,7 @@ public abstract class FirstCommand extends net.kigawa.bordgameplugin.util.plugin
     }
 
     @Override
-    public void addSubcommands(net.kigawa.bordgameplugin.util.plugin.all.command.Command subCommand) {
+    public void addSubcommands(Command subCommand) {
         getSubCommands().add(subCommand);
         addTabLists(subCommand);
     }

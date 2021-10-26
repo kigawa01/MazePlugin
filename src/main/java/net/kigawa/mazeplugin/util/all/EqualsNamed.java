@@ -1,7 +1,5 @@
 package net.kigawa.mazeplugin.util.all;
 
-import net.kigawa.bordgameplugin.util.all.Named;
-
 public class EqualsNamed {
     String name;
 

@@ -1,9 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.gate;
 
-import net.kigawa.bordgameplugin.util.all.Util;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.gate.GateData;
-import net.kigawa.bordgameplugin.util.plugin.worldedit.world.PlayerRegion;
+import net.kigawa.mazeplugin.util.all.Util;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.worldedit.world.PlayerRegion;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 

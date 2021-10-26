@@ -1,15 +1,15 @@
 package net.kigawa.mazeplugin.util.plugin.all;
 
-import net.kigawa.bordgameplugin.player.User;
-import net.kigawa.bordgameplugin.player.UserData;
-import net.kigawa.bordgameplugin.player.UserManager;
-import net.kigawa.bordgameplugin.util.all.HasEnd;
-import net.kigawa.bordgameplugin.util.all.Logger;
-import net.kigawa.bordgameplugin.util.plugin.all.command.FirstCommand;
-import net.kigawa.bordgameplugin.util.plugin.all.message.Messenger;
-import net.kigawa.bordgameplugin.util.plugin.all.player.PlayerGetter;
-import net.kigawa.bordgameplugin.util.plugin.all.player.Teleporter;
-import net.kigawa.bordgameplugin.util.plugin.all.recorder.Recorder;
+import net.kigawa.mazeplugin.util.plugin.player.User;
+import net.kigawa.mazeplugin.util.plugin.player.UserData;
+import net.kigawa.mazeplugin.util.plugin.player.UserManager;
+import net.kigawa.mazeplugin.util.all.HasEnd;
+import net.kigawa.mazeplugin.util.all.Logger;
+import net.kigawa.mazeplugin.util.plugin.all.command.FirstCommand;
+import net.kigawa.mazeplugin.util.plugin.all.message.Messenger;
+import net.kigawa.mazeplugin.util.plugin.all.player.PlayerGetter;
+import net.kigawa.mazeplugin.util.plugin.all.player.Teleporter;
+import net.kigawa.mazeplugin.util.plugin.all.recorder.Recorder;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;

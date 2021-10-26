@@ -1,8 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.command;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.EqualsCommand;
-import net.kigawa.bordgameplugin.util.plugin.all.command.TabList;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 import org.bukkit.command.CommandSender;
 
 import java.util.ArrayList;

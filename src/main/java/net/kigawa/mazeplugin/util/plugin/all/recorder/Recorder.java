@@ -1,8 +1,7 @@
 package net.kigawa.mazeplugin.util.plugin.all.recorder;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.recorder.RecorderData;
-import net.kigawa.bordgameplugin.util.yaml.Yaml;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.yaml.Yaml;
 import org.yaml.snakeyaml.constructor.CustomClassLoaderConstructor;
 
 import java.io.File;

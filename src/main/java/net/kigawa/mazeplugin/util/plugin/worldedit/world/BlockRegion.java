@@ -1,6 +1,5 @@
 package net.kigawa.mazeplugin.util.plugin.worldedit.world;
 
-import net.kigawa.bordgameplugin.util.plugin.worldedit.world.Region;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.player;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;

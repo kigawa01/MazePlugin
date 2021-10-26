@@ -1,7 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.command;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.Command;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 
 public abstract class Subcommand extends Command {
     public Subcommand(PluginBase kigawaPlugin) {

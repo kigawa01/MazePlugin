@@ -1,9 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.stage.command;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginUtil;
-import net.kigawa.bordgameplugin.util.plugin.stage.StageManager;
-import net.kigawa.bordgameplugin.util.plugin.stage.command.StageCommandBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginUtil;
+import net.kigawa.mazeplugin.util.plugin.stage.StageManager;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

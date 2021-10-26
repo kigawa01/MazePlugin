@@ -1,7 +1,7 @@
 package net.kigawa.mazeplugin.util.plugin.gate;
 
-import net.kigawa.bordgameplugin.util.plugin.all.recorder.RecorderData;
-import net.kigawa.bordgameplugin.util.plugin.worldedit.world.PlayerRegion;
+import net.kigawa.mazeplugin.util.plugin.all.recorder.RecorderData;
+import net.kigawa.mazeplugin.util.plugin.worldedit.world.PlayerRegion;
 
 public class GateData extends RecorderData {
     String world;

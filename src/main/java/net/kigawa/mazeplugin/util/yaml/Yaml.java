@@ -1,8 +1,7 @@
 package net.kigawa.mazeplugin.util.yaml;
 
 
-import net.kigawa.bordgameplugin.util.all.Logger;
-import net.kigawa.bordgameplugin.util.yaml.YamlData;
+import net.kigawa.mazeplugin.util.all.Logger;
 import org.yaml.snakeyaml.constructor.CustomClassLoaderConstructor;
 
 import java.io.*;

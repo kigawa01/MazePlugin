@@ -1,10 +1,9 @@
 package net.kigawa.mazeplugin.util.plugin.stage;
 
 import com.sk89q.worldedit.regions.Region;
-import net.kigawa.bordgameplugin.util.all.EqualsNamed;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.stage.StageData;
-import net.kigawa.bordgameplugin.util.plugin.worldedit.world.PlayerRegion;
+import net.kigawa.mazeplugin.util.all.EqualsNamed;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.worldedit.world.PlayerRegion;
 import org.bukkit.command.CommandSender;
 
 import java.io.File;
@@ -13,9 +12,9 @@ import java.util.List;
 import java.util.Random;
 
 public class StageManager {
-    List<net.kigawa.bordgameplugin.util.plugin.stage.StageData> allStage = new ArrayList<>();
-    List<net.kigawa.bordgameplugin.util.plugin.stage.StageData> canUse = new ArrayList<>();
-    List<net.kigawa.bordgameplugin.util.plugin.stage.StageData> notUse = new ArrayList<>();
+    List<StageData> allStage = new ArrayList<>();
+    List<StageData> canUse = new ArrayList<>();
+    List<StageData> notUse = new ArrayList<>();
     PluginBase plugin;
 
     public StageManager(PluginBase kigawaPlugin) {
@@ -28,13 +27,13 @@ public class StageManager {
             File file = new File(folder, files[i]);
             plugin.logger(files[i]);
 
-            net.kigawa.bordgameplugin.util.plugin.stage.StageData data = plugin.getRecorder().load(net.kigawa.bordgameplugin.util.plugin.stage.StageData.class, "stage", files[i].substring(0, files[i].length() - 4));
+            StageData data = plugin.getRecorder().load(StageData.class, "stage", files[i].substring(0, files[i].length() - 4));
             canUse.add(data);
             allStage.add(data);
         }
     }
 
-    public void returnStage(net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData) {
+    public void returnStage(StageData stageData) {
         if (notUse.contains(new EqualsNamed(stageData.getName()))) {
             canUse.add(stageData);
             notUse.remove(notUse.indexOf(new EqualsNamed(stageData.getName())));
@@ -42,7 +41,7 @@ public class StageManager {
     }
 
     public void setStartLoc(String name, int x, int y, int z, CommandSender sender) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = getStage(name, sender);
+        StageData stageData = getStage(name, sender);
         if (stageData != null) {
             int[] i = stageData.getStartLoc();
             i[0] = x;
@@ -56,7 +55,7 @@ public class StageManager {
     }
 
     public void setStage2(String name, String world, int x, int y, int z, CommandSender sender) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = getStage(name, sender);
+        StageData stageData = getStage(name, sender);
         if (stageData != null) {
             stageData.setStageWorld(world);
             double[] i = stageData.getStageLoc();
@@ -68,7 +67,7 @@ public class StageManager {
     }
 
     public void setStage1(String name, String world, int x, int y, int z, CommandSender sender) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = getStage(name, sender);
+        StageData stageData = getStage(name, sender);
         if (stageData != null) {
             stageData.setStageWorld(world);
             double[] i = stageData.getStageLoc();
@@ -80,7 +79,7 @@ public class StageManager {
     }
 
     public void setStage(String name, Region region, CommandSender sender) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = getStage(name, sender);
+        StageData stageData = getStage(name, sender);
         if (stageData != null) {
             PlayerRegion region1 = new PlayerRegion(region);
             stageData.setStageLoc(region1.getCoordinates());
@@ -88,8 +87,8 @@ public class StageManager {
         }
     }
 
-    public net.kigawa.bordgameplugin.util.plugin.stage.StageData getStage(String name, CommandSender sender) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = null;
+    public StageData getStage(String name, CommandSender sender) {
+        StageData stageData = null;
         if (allStage.contains(new EqualsNamed(name))) {
             stageData = allStage.get(allStage.indexOf(new EqualsNamed(name)));
         } else {
@@ -102,7 +101,7 @@ public class StageManager {
         //check can use this name
         if (getStage(name) == null) {
             //create Stage
-            net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = new net.kigawa.bordgameplugin.util.plugin.stage.StageData();
+            StageData stageData = new StageData();
             stageData.setName(name);
             //put in list
             canUse.add(stageData);
@@ -116,8 +115,8 @@ public class StageManager {
         }
     }
 
-    public net.kigawa.bordgameplugin.util.plugin.stage.StageData getStage(String name) {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = null;
+    public StageData getStage(String name) {
+        StageData stageData = null;
         if (name != null) {
             if (allStage.contains(new EqualsNamed(name))) {
                 stageData = allStage.get(allStage.indexOf(new EqualsNamed(name)));
@@ -129,8 +128,8 @@ public class StageManager {
         return stageData;
     }
 
-    public net.kigawa.bordgameplugin.util.plugin.stage.StageData getRandomStage() {
-        net.kigawa.bordgameplugin.util.plugin.stage.StageData stageData = null;
+    public StageData getRandomStage() {
+        StageData stageData = null;
         if (canUse.size() > 0) {
             Random random = new Random();
             int randomNumber = random.nextInt(canUse.size());

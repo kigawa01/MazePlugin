@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.recorder;
 
-import net.kigawa.bordgameplugin.util.yaml.YamlData;
+import net.kigawa.mazeplugin.util.yaml.YamlData;
 
 public class RecorderData extends YamlData {
     String name;

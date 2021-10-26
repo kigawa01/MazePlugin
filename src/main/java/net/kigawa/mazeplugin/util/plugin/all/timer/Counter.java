@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.timer;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

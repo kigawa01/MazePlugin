@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.stage;
 
-import net.kigawa.bordgameplugin.util.plugin.all.recorder.RecorderData;
+import net.kigawa.mazeplugin.util.plugin.all.recorder.RecorderData;
 
 public class StageData extends RecorderData {
 

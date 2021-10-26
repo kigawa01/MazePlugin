@@ -1,16 +1,16 @@
 package net.kigawa.mazeplugin.util.plugin.all.message.logger;
 
-import net.kigawa.bordgameplugin.util.all.Util;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginUtil;
+import net.kigawa.mazeplugin.util.all.Util;
+import net.kigawa.mazeplugin.util.plugin.all.PluginUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 import java.util.List;
 
 public class Logger {
-    private net.kigawa.bordgameplugin.util.all.Logger logger;
+    private net.kigawa.mazeplugin.util.all.Logger logger;
 
-    public Logger(net.kigawa.bordgameplugin.util.all.Logger logger) {
+    public Logger(net.kigawa.mazeplugin.util.all.Logger logger) {
         this.logger = logger;
     }
 
@@ -29,7 +29,7 @@ public class Logger {
         sendItem(itemName, PluginUtil.createString(players));
     }
 
-    public net.kigawa.bordgameplugin.util.all.Logger getLogger() {
+    public net.kigawa.mazeplugin.util.all.Logger getLogger() {
         return this.logger;
     }
 

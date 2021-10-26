@@ -1,8 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.stage.command;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.command.Subcommand;
-import net.kigawa.bordgameplugin.util.plugin.stage.StageManager;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.command.Subcommand;
+import net.kigawa.mazeplugin.util.plugin.stage.StageManager;
 
 public abstract class StageCommandBase extends Subcommand {
     private final StageManager manager;

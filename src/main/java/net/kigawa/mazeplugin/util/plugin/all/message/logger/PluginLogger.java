@@ -1,7 +1,7 @@
 package net.kigawa.mazeplugin.util.plugin.all.message.logger;
 
-import net.kigawa.bordgameplugin.util.all.Logger;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.all.Logger;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 
 public abstract class PluginLogger implements Logger {
     PluginBase plugin;

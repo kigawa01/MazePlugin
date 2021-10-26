@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.worldedit.world;
 
-import net.kigawa.bordgameplugin.util.plugin.worldedit.WorldEditUtil;
+import net.kigawa.mazeplugin.util.plugin.worldedit.WorldEditUtil;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;

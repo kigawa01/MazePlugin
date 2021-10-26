@@ -1,7 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.message.sender;
 
-import net.kigawa.bordgameplugin.util.all.Util;
-import net.kigawa.bordgameplugin.util.plugin.all.message.sender.Sender;
+import net.kigawa.mazeplugin.util.all.Util;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

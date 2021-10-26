@@ -1,6 +1,6 @@
 package net.kigawa.mazeplugin.util.plugin.all.message;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 

@@ -1,9 +1,8 @@
 package net.kigawa.mazeplugin.util.plugin.gate.command.gate;
 
-import net.kigawa.bordgameplugin.util.plugin.all.PluginBase;
-import net.kigawa.bordgameplugin.util.plugin.all.PluginUtil;
-import net.kigawa.bordgameplugin.util.plugin.gate.GateManager;
-import net.kigawa.bordgameplugin.util.plugin.gate.command.gate.GateCommandBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
+import net.kigawa.mazeplugin.util.plugin.all.PluginUtil;
+import net.kigawa.mazeplugin.util.plugin.gate.GateManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
