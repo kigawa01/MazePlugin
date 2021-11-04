@@ -80,5 +80,10 @@
             <version>7.2.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>net.kigawa.spigot</groupId>
+            <artifactId>SpigotUtil</artifactId>
+            <version>1.0a</version>
+        </dependency>
     </dependencies>
 </project>
