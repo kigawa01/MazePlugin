@@ -1,7 +1,7 @@
 package net.kigawa.mazeplugin.command;
 
-import net.kigawa.mazeplugin.util.plugin.all.PluginBase;
-import net.kigawa.mazeplugin.util.plugin.all.command.FirstCommand;
+import net.kigawa.spigot.pluginutil.PluginBase;
+import net.kigawa.spigot.pluginutil.command.FirstCommand;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
