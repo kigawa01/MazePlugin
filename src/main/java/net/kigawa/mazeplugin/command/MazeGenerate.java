@@ -1,6 +1,7 @@
 package net.kigawa.mazeplugin.command;
 
 import net.kigawa.spigot.pluginutil.PluginBase;
+import net.kigawa.spigot.pluginutil.command.CommandParent;
 import net.kigawa.spigot.pluginutil.command.Subcommand;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -8,8 +9,8 @@ import org.bukkit.command.CommandSender;
 import java.util.List;
 
 public class MazeGenerate extends Subcommand {
-    public MazeGenerate(PluginBase kigawaPlugin) {
-        super(kigawaPlugin);
+    public MazeGenerate(PluginBase kigawaPlugin, CommandParent commandParent) {
+        super(kigawaPlugin,commandParent);
     }
 
     @Override

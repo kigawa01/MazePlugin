@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MazeCommand extends FirstCommand {
     public MazeCommand(PluginBase plugin) {
-        super(plugin);
+        super(plugin, plugin);
     }
 
     @Override
